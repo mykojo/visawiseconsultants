@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VisaWise Consultants — Portugal D7 &amp; D8 Visa Specialists</title>
+<meta name="description" content="AI-guided Portugal visa advisory for Americans and British. D7 and D8 visa specialists — from your first question to your residence permit.">
+<meta property="og:title" content="VisaWise Consultants — Portugal D7 &amp; D8 Visa Specialists">
+<meta property="og:description" content="AI-guided Portugal visa advisory. Talk to Dora — free, instant, no paperwork.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0A1628;
+  --navy-light: #1A2B45;
+  --gold: #F59E0B;
+  --gold-dark: #D97706;
+  --cream: #FAF7F2;
+  --white: #FFFFFF;
+  --text: #1A1A2E;
+  --muted: #6B7280;
+  --border: #E5E0D8;
+  --green: #4A7C59;
+  --blue: #1A3A6B;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;color:var(--text);background:var(--white);line-height:1.6}
+h1,h2,h3,h4{font-family:'Playfair Display',serif}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;height:auto}
+
+/* NAV */
+.navbar{position:sticky;top:0;z-index:100;background:var(--white);box-shadow:0 1px 12px rgba(0,0,0,0.08)}
+.nav-container{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-logo img{height:44px;display:block}
+.nav-links{list-style:none;display:flex;align-items:center;gap:32px}
+.nav-links a{font-family:'Outfit',sans-serif;font-weight:500;font-size:0.95rem;color:var(--text);transition:color 0.2s}
+.nav-links a:hover{color:var(--gold-dark)}
+.btn-nav{background:var(--gold);color:var(--navy)!important;padding:10px 20px;border-radius:6px;font-weight:600;transition:background 0.2s!important}
+.btn-nav:hover{background:var(--gold-dark)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:24px;height:2px;background:var(--text);border-radius:2px;transition:all 0.3s}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;
+  background: radial-gradient(ellipse at 80% 90%, rgba(245,159,11,0.15) 0%, rgba(26,59,107,0.4) 40%, #0A1628 70%)}
+.hero-inner{max-width:720px}
+.hero-label{display:inline-block;font-size:0.8rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);background:rgba(245,159,11,0.12);border:1px solid rgba(245,159,11,0.3);padding:6px 16px;border-radius:20px;margin-bottom:24px}
+.hero h1{font-size:clamp(2.4rem,5vw,3.8rem);color:var(--white);line-height:1.15;margin-bottom:20px}
+.hero p{font-size:1.15rem;color:rgba(255,255,255,0.78);font-weight:300;margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto}
+.btn-primary{display:inline-block;background:var(--gold);color:var(--navy);font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;padding:15px 32px;border-radius:8px;transition:all 0.2s;box-shadow:0 4px 20px rgba(245,159,11,0.3)}
+.btn-primary:hover{background:var(--gold-dark);transform:translateY(-1px);box-shadow:0 6px 24px rgba(245,159,11,0.4)}
+.hero-note{margin-top:14px;font-size:0.82rem;color:rgba(255,255,255,0.45)}
+.trust-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:48px}
+.trust-badge{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);padding:10px 18px;border-radius:30px;font-size:0.82rem;color:rgba(255,255,255,0.7);font-weight:500}
+
+/* STATS */
+.stats-bar{background:var(--cream);padding:48px 24px}
+.stats-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
+.stat-number{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy)}
+.stat-label{font-size:0.85rem;color:var(--muted);margin-top:4px}
+
+/* SECTIONS */
+.section{padding:80px 24px}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-label{font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:12px}
+.section-title{font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:16px;line-height:1.2}
+.section-sub{font-size:1.05rem;color:var(--muted);max-width:620px;margin-bottom:48px}
+
+/* WHY PORTUGAL */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.why-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:28px;transition:box-shadow 0.2s}
+.why-card:hover{box-shadow:0 4px 24px rgba(0,0,0,0.08)}
+.why-icon{font-size:2rem;margin-bottom:14px}
+.why-card h3{font-size:1.05rem;margin-bottom:10px;color:var(--navy)}
+.why-card p{font-size:0.9rem;color:var(--muted);line-height:1.65}
+
+/* VISA SECTION */
+.visa-section{background:var(--navy);padding:80px 24px}
+.visa-inner{max-width:1000px;margin:0 auto}
+.visa-title{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--white);text-align:center;margin-bottom:48px}
+.visa-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.visa-card{background:var(--navy-light);border-radius:14px;overflow:hidden}
+.visa-card-accent{height:4px}
+.visa-card-accent.gold{background:var(--gold)}
+.visa-card-accent.green{background:var(--green)}
+.visa-card-body{padding:32px}
+.visa-card h3{font-size:1.4rem;color:var(--white);margin-bottom:6px}
+.visa-card .visa-sub{font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:24px;font-style:italic}
+.visa-card ul{list-style:none;margin-bottom:24px}
+.visa-card ul li{display:flex;gap:10px;font-size:0.9rem;color:rgba(255,255,255,0.8);padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.visa-card ul li::before{content:"•";color:var(--gold);flex-shrink:0}
+.visa-card .best-for{font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.5}
+.visa-card .best-for strong{color:rgba(255,255,255,0.75)}
+.visa-cta{text-align:center;margin-top:44px}
+.visa-cta p{color:rgba(255,255,255,0.6);margin-bottom:16px}
+
+/* HOW IT WORKS */
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;position:relative}
+.step{text-align:center;padding:32px 24px}
+.step-num{font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:16px;opacity:0.9}
+.step h3{font-size:1.1rem;margin-bottom:12px;color:var(--navy)}
+.step p{font-size:0.9rem;color:var(--muted);line-height:1.7}
+
+/* PRICING */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.price-card{border:2px solid var(--border);border-radius:14px;padding:36px 28px;position:relative;transition:box-shadow 0.2s}
+.price-card:hover{box-shadow:0 6px 30px rgba(0,0,0,0.1)}
+.price-card.featured{border-color:var(--gold);box-shadow:0 4px 24px rgba(245,159,11,0.15)}
+.popular-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:0.75rem;font-weight:700;padding:4px 16px;border-radius:20px;white-space:nowrap}
+.price-name{font-size:0.85rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px}
+.price-amount{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+.price-desc{font-size:0.85rem;color:var(--muted);margin-bottom:24px}
+.price-features{list-style:none;margin-bottom:28px}
+.price-features li{display:flex;gap:10px;font-size:0.88rem;padding:7px 0;border-bottom:1px solid var(--border);color:var(--text)}
+.price-features li::before{content:"✓";color:var(--green);font-weight:700;flex-shrink:0}
+.btn-outline{display:block;text-align:center;border:2px solid var(--navy);color:var(--navy);font-weight:600;font-size:0.95rem;padding:12px;border-radius:8px;transition:all 0.2s}
+.btn-outline:hover,.price-card.featured .btn-outline{background:var(--navy);color:var(--white)}
+.price-note{font-size:0.8rem;color:var(--muted);margin-top:28px;text-align:center}
+
+/* TESTIMONIALS */
+.testimonials-section{background:var(--navy);padding:80px 24px}
+.testimonials-inner{max-width:1100px;margin:0 auto}
+.testimonials-title{font-size:clamp(1.8rem,3.5vw,2.4rem);color:var(--white);text-align:center;margin-bottom:48px}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testimonial-card{background:var(--white);border-radius:12px;padding:28px}
+.testimonial-stars{color:var(--gold);font-size:0.9rem;margin-bottom:12px;letter-spacing:2px}
+.testimonial-text{font-size:0.9rem;color:var(--text);line-height:1.7;margin-bottom:18px;font-style:italic}
+.testimonial-author{font-weight:600;font-size:0.85rem;color:var(--navy)}
+.testimonials-note{text-align:center;margin-top:24px;font-size:0.75rem;color:rgba(255,255,255,0.35)}
+
+/* BLOG PREVIEW */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.blog-card{border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:box-shadow 0.2s}
+.blog-card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.08)}
+.blog-card-body{padding:24px}
+.blog-tag{font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--gold-dark);margin-bottom:8px}
+.blog-card h3{font-size:1.05rem;margin-bottom:8px;color:var(--navy);line-height:1.35}
+.blog-card p{font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:14px}
+.blog-date{font-size:0.78rem;color:var(--muted);margin-bottom:10px}
+.blog-link{font-size:0.85rem;font-weight:600;color:var(--gold-dark)}
+.blog-all{text-align:center;margin-top:40px}
+.btn-text{font-weight:600;color:var(--navy);border-bottom:2px solid var(--gold);padding-bottom:2px;font-size:0.95rem}
+
+/* FAQ */
+.faq-section{padding:80px 24px;background:var(--white)}
+.faq-inner{max-width:800px;margin:0 auto}
+.faq-group{margin-bottom:40px}
+.faq-group-title{font-size:1rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--gold-dark);margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+details{border:1px solid var(--border);border-radius:10px;margin-bottom:10px;overflow:hidden}
+details[open]{box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+summary{padding:18px 22px;cursor:pointer;font-weight:500;font-size:0.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";font-size:1.2rem;color:var(--gold);flex-shrink:0;transition:transform 0.2s}
+details[open] summary::after{content:"−"}
+details p,details div{padding:0 22px 18px;font-size:0.9rem;color:var(--muted);line-height:1.75}
+details p strong{color:var(--text)}
+
+/* FINAL CTA */
+.final-cta{background:var(--navy);padding:100px 24px;text-align:center}
+.final-cta h2{font-size:clamp(2rem,4vw,3rem);color:var(--white);margin-bottom:16px}
+.final-cta p{font-size:1.05rem;color:rgba(255,255,255,0.7);margin-bottom:36px}
+
+/* FOOTER */
+footer{background:#07101F;padding:56px 24px 32px}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:40px}
+.footer-brand img{height:40px;margin-bottom:12px}
+.footer-brand p{font-size:0.85rem;color:rgba(255,255,255,0.45);font-style:italic;margin-top:8px}
+.footer-col h4{font-family:'Outfit',sans-serif;font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4);margin-bottom:14px}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:8px}
+.footer-col ul li a{font-size:0.88rem;color:rgba(255,255,255,0.55);transition:color 0.2s}
+.footer-col ul li a:hover{color:var(--white)}
+.footer-col p{font-size:0.85rem;color:rgba(255,255,255,0.5)}
+.footer-col a{font-size:0.88rem;color:rgba(255,255,255,0.55)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:0.78rem;color:rgba(255,255,255,0.3)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .visa-grid{grid-template-columns:1fr}
+  .steps-grid{grid-template-columns:1fr}
+  .pricing-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
+  .testimonials-grid{grid-template-columns:1fr}
+  .blog-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-top{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .why-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--white);flex-direction:column;padding:20px 24px;box-shadow:0 8px 24px rgba(0,0,0,0.1);gap:16px;align-items:flex-start}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+  .trust-badges{gap:10px}
+  .trust-badge{font-size:0.75rem;padding:8px 12px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" height="44" alt="VisaWise">
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="https://joseph-app.onrender.com" class="btn-nav">Start Your Journey →</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-label">Portugal D7 &amp; D8 Visa Specialists</span>
+    <h1>Your New Life in Portugal Starts Here</h1>
+    <p>AI-guided visa advisory — from your first question to your residence permit</p>
+    <a href="https://joseph-app.onrender.com" class="btn-primary">Talk to Dora — It's Free →</a>
+    <p class="hero-note">No commitment. No paperwork. Just answers.</p>
+    <div class="trust-badges">
+      <span class="trust-badge">🇵🇹 Portugal specialists</span>
+      <span class="trust-badge">⚡ AI-powered 24/7</span>
+      <span class="trust-badge">⚖️ Lawyer reviewed</span>
+      <span class="trust-badge">🏢 VFS experts</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-bar">
+  <div class="stats-grid">
+    <div>
+      <div class="stat-number">20,000+</div>
+      <div class="stat-label">Americans living in Portugal</div>
+    </div>
+    <div>
+      <div class="stat-number">#7</div>
+      <div class="stat-label">Safest country globally</div>
+    </div>
+    <div>
+      <div class="stat-number">300</div>
+      <div class="stat-label">Days of sunshine per year</div>
+    </div>
+    <div>
+      <div class="stat-number">5 years</div>
+      <div class="stat-label">To EU citizenship</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY PORTUGAL -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">The Case for Portugal</div>
+    <h2 class="section-title">Why Thousands of Americans Are Making the Move</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🏥</div>
+        <h3>Healthcare without the bills</h3>
+        <p>Portugal's public healthcare is free for residents. Private insurance costs €400–1,200/year — not $40,000.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🛡️</div>
+        <h3>Safety you can actually feel</h3>
+        <p>Ranked 7th safest country globally by the 2024 Peace Index. A fundamentally different daily experience.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌍</div>
+        <h3>Path to EU citizenship</h3>
+        <p>Five years of legal residency opens the door to a Portuguese passport — live and work anywhere in the EU.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">💶</div>
+        <h3>A life that costs less</h3>
+        <p>A comfortable life in Porto or the Algarve for €1,500–2,000/month. Your money goes further in ways that change how you live.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">☀️</div>
+        <h3>300 days of sunshine</h3>
+        <p>The Algarve averages 3,000 hours of sun per year. Cold, grey winters become a distant memory.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">✈️</div>
+        <h3>Gateway to Schengen Europe</h3>
+        <p>Live in Portugal, explore 26 countries visa-free. Weekend in Paris, month in Barcelona, summer in the Azores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHICH VISA -->
+<section class="visa-section">
+  <div class="visa-inner">
+    <h2 class="visa-title">Which Visa Is Right For You?</h2>
+    <div class="visa-grid">
+      <div class="visa-card">
+        <div class="visa-card-accent gold"></div>
+        <div class="visa-card-body">
+          <h3>D8 Digital Nomad Visa</h3>
+          <p class="visa-sub">For remote workers and freelancers</p>
+          <ul>
+            <li>Monthly income: €3,480+ (≈$3,750 USD)</li>
+            <li>Work must be for employers outside Portugal</li>
+            <li>Employment contract or client agreements required</li>
+            <li>2-year residence permit, renewable</li>
+            <li>Spouse and children included</li>
+            <li>Path to citizenship: 5 years</li>
+          </ul>
+          <p class="best-for"><strong>Best for:</strong> Remote employees, freelancers, consultants, designers, developers, writers working for non-Portuguese companies.</p>
+        </div>
+      </div>
+      <div class="visa-card">
+        <div class="visa-card-accent green"></div>
+        <div class="visa-card-body">
+          <h3>D7 Passive Income Visa</h3>
+          <p class="visa-sub">For retirees and passive income earners</p>
+          <ul>
+            <li>Monthly income: €920+ (≈$1,000 USD)</li>
+            <li>Income must be passive: pension, dividends, rental</li>
+            <li>Social Security qualifies</li>
+            <li>2-year residence permit, renewable</li>
+            <li>Spouse and children included</li>
+            <li>Path to citizenship: 5 years</li>
+          </ul>
+          <p class="best-for"><strong>Best for:</strong> Retirees, dividend investors, rental property owners, anyone living on passive income from the US.</p>
+        </div>
+      </div>
+    </div>
+    <div class="visa-cta">
+      <p>Not sure which applies to you?</p>
+      <a href="https://joseph-app.onrender.com" class="btn-primary">Ask Dora — It's Free →</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how-it-works" style="background:var(--cream)">
+  <div class="section-inner">
+    <div class="section-label">The Process</div>
+    <h2 class="section-title">From First Question to Residence Permit</h2>
+    <p class="section-sub">Dora guides you through every step.</p>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Tell Dora your situation <em style="font-size:0.8rem;font-weight:400;color:var(--muted)">(5 minutes)</em></h3>
+        <p>Our AI advisor Dora asks you the right questions — income, employment type, which state you live in, family situation. No forms. No jargon. Just a conversation that gets to the point.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Get your personalised checklist</h3>
+        <p>Dora generates a document checklist tailored to your situation and your VFS office. She knows the San Francisco office demands more than DC. She tells you exactly what to prepare.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>We guide you all the way</h3>
+        <p>From FBI apostille timing to VFS appointment monitoring to AIMA booking — Dora tracks every deadline and alerts you when action is needed. Francisco (our Portuguese lawyer) reviews before you submit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing">
+  <div class="section-inner">
+    <div class="section-label">Pricing</div>
+    <h2 class="section-title">Simple, Transparent Pricing</h2>
+    <p class="section-sub">No hidden fees. No surprise charges.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-name">Self-Guided</div>
+        <div class="price-amount">€199</div>
+        <div class="price-desc">Everything you need to apply with confidence</div>
+        <ul class="price-features">
+          <li>Dora AI intake and assessment</li>
+          <li>Personalised document checklist</li>
+          <li>Journey portal — track your application</li>
+          <li>VFS appointment slot alerts</li>
+          <li>Email support</li>
+        </ul>
+        <a href="https://joseph-app.onrender.com" class="btn-outline">Get Started</a>
+      </div>
+      <div class="price-card featured">
+        <div class="popular-badge">Most Popular</div>
+        <div class="price-name">Assisted</div>
+        <div class="price-amount">€599</div>
+        <div class="price-desc">Professional guidance at every step</div>
+        <ul class="price-features">
+          <li>Everything in Self-Guided</li>
+          <li>Francisco (lawyer) document review</li>
+          <li>Document pack assembly and checks</li>
+          <li>Motivation letter drafting</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="https://joseph-app.onrender.com" class="btn-outline">Get Started</a>
+      </div>
+      <div class="price-card">
+        <div class="price-name">Full Service</div>
+        <div class="price-amount">€999</div>
+        <div class="price-desc">We handle everything</div>
+        <ul class="price-features">
+          <li>Everything in Assisted</li>
+          <li>AIMA appointment secured by concierge</li>
+          <li>Portuguese-speaking concierge support</li>
+          <li>End-to-end case management</li>
+          <li>Dedicated advisor</li>
+        </ul>
+        <a href="https://joseph-app.onrender.com" class="btn-outline">Get Started</a>
+      </div>
+    </div>
+    <p class="price-note">Prices are per application (primary applicant). Dependent family members from €99 each.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="testimonials-inner">
+    <h2 class="testimonials-title">What Our Clients Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"I spent months trying to figure out whether I qualified for the D8. Dora told me in 15 minutes, gave me a checklist, and flagged that the SF office wants 12 months of income statements. She was right. We got our visas on the first submission."</p>
+        <div class="testimonial-author">Jennifer M. — California</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Retired at 62 and always dreamed of Portugal. The D7 process sounded complicated until Francisco reviewed our file. Six months later we're watching the sunset over the Algarve. It still feels unreal."</p>
+        <div class="testimonial-author">David &amp; Sarah T. — Texas</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Dora told me to apply through Washington DC rather than California because my temporary address qualified me for the easier office. That single piece of advice was worth the entire fee."</p>
+        <div class="testimonial-author">James H. — London</div>
+      </div>
+    </div>
+    <p class="testimonials-note">Results may vary. Individual experiences.</p>
+  </div>
+</section>
+
+<!-- BLOG PREVIEW -->
+<section class="section" style="background:var(--cream)">
+  <div class="section-inner">
+    <div class="section-label">Knowledge &amp; Guides</div>
+    <h2 class="section-title">From Our Blog</h2>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <div class="blog-card-body">
+          <div class="blog-tag">Living Abroad</div>
+          <div class="blog-date">March 15, 2025</div>
+          <h3><a href="blog/why-americans-are-moving-to-portugal-2025.html">Why 20,000 Americans Have Chosen Portugal — And Why the Number Keeps Growing</a></h3>
+          <p>From healthcare costs to safety rankings, we break down exactly why Portugal has become America's favourite emigration destination — with honest answers about the challenges too.</p>
+          <a href="blog/why-americans-are-moving-to-portugal-2025.html" class="blog-link">Read more →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-card-body">
+          <div class="blog-tag">Visa Guides</div>
+          <div class="blog-date">April 2, 2025</div>
+          <h3><a href="blog/d8-vs-d7-which-visa-is-right-for-you.html">D8 vs D7 Visa: Which Portugal Visa is Right for You?</a></h3>
+          <p>The most common question we hear — and the most misunderstood. W-2 remote workers, freelancers, and retirees all have different paths. Here's the definitive breakdown.</p>
+          <a href="blog/d8-vs-d7-which-visa-is-right-for-you.html" class="blog-link">Read more →</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-card-body">
+          <div class="blog-tag">Application Process</div>
+          <div class="blog-date">May 8, 2025</div>
+          <h3><a href="blog/san-francisco-vfs-what-to-expect.html">San Francisco VFS Portugal Appointment: What To Expect</a></h3>
+          <p>The SF consulate has a well-earned reputation for being the strictest US VFS office. Here's exactly what they require — and how to walk in prepared.</p>
+          <a href="blog/san-francisco-vfs-what-to-expect.html" class="blog-link">Read more →</a>
+        </div>
+      </div>
+    </div>
+    <div class="blog-all">
+      <a href="blog/index.html" class="btn-text">View All Posts →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title" style="margin-bottom:8px">Your Questions, Answered</h2>
+    <p style="color:var(--muted);margin-bottom:48px;font-size:1rem">Real questions from people who've been through this.</p>
+
+    <div class="faq-group">
+      <div class="faq-group-title">Eligibility &amp; Visa Type</div>
+
+      <details>
+        <summary>What's the difference between the D7 and D8 visa?</summary>
+        <p>The D7 is for passive income — pensions, dividends, rental income, interest. The D8 is for remote workers and freelancers earning active income from outside Portugal. Income thresholds differ: D7 requires €920/month (Portugal's minimum wage); D8 requires €3,480/month (four times the minimum wage). If you work remotely for a US employer, you need the D8, not the D7. The D7 is not designed for active workers.</p>
+      </details>
+
+      <details>
+        <summary>I earn $4,500/month from US freelance clients. Which visa?</summary>
+        <p>The D8. Your income is active (earned by working) from outside Portugal. At current rates, $4,500 converts to approximately €4,150 — comfortably above the €3,480 threshold. You'll need client contracts or service agreements as proof of remote work.</p>
+      </details>
+
+      <details>
+        <summary>My Social Security pays $2,800/month. Can I get a D7?</summary>
+        <p>Yes. Social Security qualifies as passive income for the D7. $2,800 converts to approximately €2,590 — well above the €920 minimum for a single applicant. For a couple, the threshold is €1,380/month. Bring your Social Security award letter as income proof.</p>
+      </details>
+
+      <details>
+        <summary>I'm a W-2 employee working remotely for a US company. Which visa?</summary>
+        <p>The D8. Even with a salary, if you work remotely for a US employer from anywhere, you qualify for D8. Your employment contract showing remote work and your employer's US location are the key documents.</p>
+      </details>
+
+      <details>
+        <summary>Can my spouse work in Portugal on our visa?</summary>
+        <p>On a D8, your accompanying spouse may work remotely for non-Portuguese employers. On a D7, taking up active employment in Portugal may require separate authorisation — remote work for a foreign employer is generally permitted. We review each family situation with Francisco individually.</p>
+      </details>
+
+      <details>
+        <summary>I have €500,000 to invest. Should I consider the Golden Visa?</summary>
+        <p>The Golden Visa changed significantly in October 2023 — real estate no longer qualifies. Current routes require €500,000 in regulated investment funds, cultural donations, scientific research, or job creation. The Golden Visa requires only 7 days/year in Portugal to maintain status, versus the D7/D8's 183-day residency requirement. If you want residency without living there full-time, the Golden Visa is worth exploring. If you plan to actually live in Portugal, D7 or D8 is simpler and less expensive.</p>
+      </details>
+    </div>
+
+    <div class="faq-group">
+      <div class="faq-group-title">Income &amp; Financial Documents</div>
+
+      <details>
+        <summary>The minimum is €920/month. How much should I actually show?</summary>
+        <p>Show considerably more, especially for San Francisco. The minimum is a floor, not a target. Consular officers want to see financial stability. For D8 at SF, showing €5,000–7,000/month is more comfortable than the €3,480 minimum. For D7, €1,500–2,000/month is stronger than €920. Bank statements should show consistent deposits over time — not a recent lump sum.</p>
+      </details>
+
+      <details>
+        <summary>I just transferred €15,000 to my Portuguese bank account. Is that enough?</summary>
+        <p>A lump sum transfer looks suspicious, especially at the SF office. Consular officers want to see stable, organic balances built over 3–6 months. If you've just transferred funds, also provide source account statements showing where the money came from — a brokerage account, savings, or property sale. The story of the money's origin matters as much as the balance.</p>
+      </details>
+
+      <details>
+        <summary>How many months of bank statements do I need?</summary>
+        <p>The official minimum is 3 months. In practice, the San Francisco office often asks for 12. We always advise collecting 12 months before your appointment — if they only ask for 3, you provide 3. If they ask for more, you're ready.</p>
+      </details>
+
+      <details>
+        <summary>My freelance income varies month to month. Is that a problem?</summary>
+        <p>Irregular income is manageable. What matters is the average over the period. If your 12-month average meets the threshold, you're in a strong position. Provide 12 months of statements and a simple average calculation. Ongoing client contracts also demonstrate stability.</p>
+      </details>
+    </div>
+
+    <div class="faq-group">
+      <div class="faq-group-title">The Application Process</div>
+
+      <details>
+        <summary>How long does the process take from start to finish?</summary>
+        <p>From starting document preparation to visa in hand: 4–6 months is realistic. This includes 4–8 weeks for the FBI apostille, 4–8 weeks for document preparation and VFS appointment, and 60–90 days for the consulate to process. San Francisco runs at the longer end — sometimes 90+ days. Washington DC is typically faster at 45–60 days.</p>
+      </details>
+
+      <details>
+        <summary>What is the FBI apostille and why does it take so long?</summary>
+        <p>The FBI background check (Identity History Summary) is required for all US-based applicants. It must be accompanied by a Hague Apostille — a certification making it valid in Portugal. Step 1: request the FBI check at fbi.gov (2–4 weeks). Step 2: send it to your state Secretary of State for apostille (1–4 weeks). Total: 4–8 weeks. The document must be dated within 90 days of your VFS appointment. Start this the moment you decide to apply.</p>
+      </details>
+
+      <details>
+        <summary>Can I submit my application without my passport?</summary>
+        <p>Yes. VFS takes your passport at submission to stamp the visa, but you can hold it until after the decision and make a second trip. Advantage: your passport remains available for travel during the 60–90 day processing window. Disadvantage: two trips to VFS. If you have no upcoming international travel, submitting with your application is more efficient.</p>
+      </details>
+
+      <details>
+        <summary>Why is the San Francisco VFS office stricter than others?</summary>
+        <p>The SF consulate has a well-documented reputation in the expat community for being the most meticulous US VFS office. They request 12 months of income proof (vs the 3-month minimum), treat the D8 similarly to the stricter D7 standard, and scrutinise accommodation proof more carefully. Washington DC, New York, and Houston are generally more straightforward. California residents are tied to SF, but thorough preparation makes it very manageable.</p>
+      </details>
+
+      <details>
+        <summary>Which VFS office should I use?</summary>
+        <p>California → San Francisco. New York, New Jersey, Connecticut → New York. DC, Virginia, Maryland, NC, SC, GA, most FL, TX, LA → Washington DC. Miami/Fort Lauderdale → Miami or DC. Texas → Houston or DC. You must use the office covering your state of residence — you cannot choose based on appointment availability.</p>
+      </details>
+
+      <details>
+        <summary>VFS never has appointments. What do I do?</summary>
+        <p>Appointment scarcity is real, especially at SF. Slots appear unpredictably and disappear within minutes. Dora monitors the VFS portal and alerts you immediately when a slot opens. The Americans &amp; FriendsPT Facebook group also maintains a community tracker. Use both — automated monitoring plus community alerts as backup.</p>
+      </details>
+    </div>
+
+    <div class="faq-group">
+      <div class="faq-group-title">Documents &amp; Requirements</div>
+
+      <details>
+        <summary>Do I need a Portuguese bank account before I apply?</summary>
+        <p>Technically no — but in practice, opening one before applying strengthens your file. You'll need it for the AIMA residence permit appointment after arrival. Banks accepting Americans include Millennium BCP, Novo Banco, and Caixa Geral de Depósitos. Note: some Portuguese banks are reluctant due to US FATCA reporting requirements — a fiscal representative can help navigate this.</p>
+      </details>
+
+      <details>
+        <summary>What is a NIF and how do I get one?</summary>
+        <p>A NIF (Número de Identificação Fiscal) is Portugal's tax identification number — you need it to open a bank account, sign a rental agreement, buy property, and register with AIMA. You can get one remotely before arriving by appointing a fiscal representative. Several services offer remote NIF registration for €50–200. After arriving, you can register in person at any Finanças tax office.</p>
+      </details>
+
+      <details>
+        <summary>What type of accommodation proof does SF accept?</summary>
+        <p>The SF office consistently prefers a 12-month signed rental agreement registered with Portugal's Finanças. Airbnb bookings and hotel reservations carry higher risk at SF, though they're sometimes accepted at other offices. A property purchase deed works. For SF, a 12-month signed and registered agreement is the gold standard.</p>
+      </details>
+
+      <details>
+        <summary>Does my US health insurance cover Portugal?</summary>
+        <p>Only if the policy explicitly covers medical treatment in Portugal with at least €30,000 coverage. Many US employer plans are US-only and exclude international coverage. If yours doesn't cover Portugal, you'll need international health insurance — options include Cigna Global, Allianz Care, and Aetna International at €400–1,200/year.</p>
+      </details>
+    </div>
+
+    <div class="faq-group">
+      <div class="faq-group-title">Life in Portugal</div>
+
+      <details>
+        <summary>Do I need to speak Portuguese?</summary>
+        <p>Not to get started. English is widely spoken in Lisbon, Porto, and the Algarve, especially among younger people and in business. However, government offices often operate in Portuguese, and daily life outside tourist areas runs in Portuguese. For citizenship after 5 years, you need to pass an A2-level Portuguese language test — equivalent to basic conversational ability.</p>
+      </details>
+
+      <details>
+        <summary>How much does it really cost to live in Portugal?</summary>
+        <p>It varies significantly by location. Lisbon: one-bedroom apartment €1,200–1,500/month. Porto and Algarve: €800–1,100/month. Smaller cities: €400–700/month. A comfortable single person's budget outside Lisbon runs €1,500–2,000/month including rent, food, transport, and healthcare. A couple can live well on €2,500–3,500/month in most of Portugal.</p>
+      </details>
+
+      <details>
+        <summary>What happens to my US taxes after I move?</summary>
+        <p>Americans are taxed on worldwide income regardless of residence — you must continue filing US taxes. Several mechanisms prevent double taxation: the Foreign Earned Income Exclusion (FEIE, up to $126,500 in 2024), the Foreign Tax Credit, and the US-Portugal tax treaty. If you spend more than 183 days in Portugal, you also become a Portuguese tax resident. The NHR tax regime ended for new applicants in January 2024. Get advice from a US expat tax specialist before moving.</p>
+      </details>
+
+      <details>
+        <summary>Can I access Portuguese healthcare as a resident?</summary>
+        <p>Yes. With a Portuguese residence permit, you can register with the public health system (SNS — Serviço Nacional de Saúde) for low or no cost care. Many expats also carry private insurance (€400–1,200/year) for faster access and English-speaking doctors. Private hospitals and English-speaking doctors are widely available in Lisbon, Porto, and the Algarve.</p>
+      </details>
+
+      <details>
+        <summary>Can I bring my pets?</summary>
+        <p>Yes. Dogs and cats can enter Portugal with a microchip, rabies vaccination (given after microchipping), a USDA-endorsed health certificate or EU-format pet passport, and a tapeworm treatment for dogs 1–5 days before arrival. Start the process at least 3–4 months before your move date.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <h2>Ready to Start Your Portugal Journey?</h2>
+  <p>Talk to Dora today. She'll tell you exactly what you qualify for.</p>
+  <a href="https://joseph-app.onrender.com" class="btn-primary">Start Free →</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-white.png" height="40" alt="VisaWise">
+        <p>Navigating Your Journey with Confidence</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><a href="mailto:hello@visawiseconsultants.com">hello@visawiseconsultants.com</a></p>
+        <p style="margin-top:16px;font-size:0.78rem;color:rgba(255,255,255,0.3)">Powered by Dora AI</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Visa Wise Consultants. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const ham = document.getElementById('hamburger');
+const nav = document.getElementById('nav-links');
+ham.addEventListener('click', () => nav.classList.toggle('open'));
+</script>
+</body>
+</html>
