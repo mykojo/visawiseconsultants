@@ -31,7 +31,7 @@ img{max-width:100%;height:auto}
 
 /* NAV */
 .navbar{position:sticky;top:0;z-index:100;background:var(--white);box-shadow:0 1px 12px rgba(0,0,0,0.08)}
-.nav-container{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-container{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;min-height:80px}
 .nav-logo img{height:55px;display:block;width:auto}
 .nav-links{list-style:none;display:flex;align-items:center;gap:32px}
 .nav-links a{font-family:'Outfit',sans-serif;font-weight:500;font-size:0.95rem;color:var(--text);transition:color 0.2s}
@@ -216,8 +216,10 @@ footer{background:#07101F;padding:56px 24px 32px}
 <nav class="navbar">
   <div class="nav-container">
     <a href="index.html" class="nav-logo">
-      <img src="images/logo.png" alt="VisaWise Consultants" style="height:60px;width:auto;display:block">
-      <div style="font-family:'Outfit',sans-serif;font-size:11px;letter-spacing:0.06em;color:var(--muted,#6B7280);margin-top:3px;">Navigating your journey with confidence</div>
+      <div style="display:flex;flex-direction:column;align-items:flex-start;">
+        <img src="images/logo.png" alt="VisaWise Consultants" style="height:60px;width:auto;display:block">
+        <div style="font-family:'Outfit',sans-serif;font-size:10px;letter-spacing:0.05em;color:#6B7280;margin-top:2px;white-space:nowrap;line-height:1.2;">Navigating your journey with confidence</div>
+      </div>
     </a>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
