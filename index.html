@@ -165,7 +165,10 @@ details p,details div{padding:0 22px 18px;font-size:0.9rem;color:var(--muted);li
 details p strong{color:var(--text)}
 
 /* FINAL CTA */
-.final-cta{background:linear-gradient(rgba(10,22,40,0.82),rgba(10,22,40,0.82)),url('images/lifestyle-footer.jpg') center/cover no-repeat;padding:100px 24px;text-align:center}
+.final-cta{position:relative;overflow:hidden;padding:100px 24px;text-align:center}
+.final-cta-bg{position:absolute;inset:0;background:url('images/lifestyle-footer.jpg') center/cover no-repeat;filter:brightness(0.8);z-index:0}
+.final-cta-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,22,40,0.3) 0%,rgba(10,22,40,0.5) 100%);z-index:1}
+.final-cta-inner{position:relative;z-index:2}
 .final-cta h2{font-size:clamp(2rem,4vw,3rem);color:var(--white);margin-bottom:16px}
 .final-cta p{font-size:1.05rem;color:rgba(255,255,255,0.7);margin-bottom:36px}
 
@@ -220,9 +223,9 @@ footer{background:#07101F;padding:56px 24px 32px}
     </button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="blog/index.html">Blog</a></li>
       <li><a href="#how-it-works">How It Works</a></li>
       <li><a href="#pricing">Pricing</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
       <li><a href="https://joseph-app.onrender.com" class="btn-nav">Start Your Journey →</a></li>
     </ul>
   </div>
@@ -321,7 +324,7 @@ footer{background:#07101F;padding:56px 24px 32px}
         <div class="why-card-body">
           <div class="why-icon">🌍</div>
           <h3>Path to EU citizenship</h3>
-          <p>Five years of legal residency opens the door to a Portuguese passport. Live and work anywhere in the EU.</p>
+          <p>Qualifying legal residency opens the door to a Portuguese passport. Live and work anywhere in the EU.</p>
         </div>
       </div>
     </div>
@@ -344,7 +347,7 @@ footer{background:#07101F;padding:56px 24px 32px}
             <li>Employment contract or client agreements required</li>
             <li>2-year residence permit, renewable</li>
             <li>Spouse and children included</li>
-            <li>Path to citizenship: 5 years</li>
+            <li>Clear pathway to EU citizenship</li>
           </ul>
           <p class="best-for"><strong>Best for:</strong> Remote employees, freelancers, consultants, designers, developers, writers working for non-Portuguese companies.</p>
         </div>
@@ -360,12 +363,13 @@ footer{background:#07101F;padding:56px 24px 32px}
             <li>Social Security qualifies</li>
             <li>2-year residence permit, renewable</li>
             <li>Spouse and children included</li>
-            <li>Path to citizenship: 5 years</li>
+            <li>Clear pathway to EU citizenship</li>
           </ul>
           <p class="best-for"><strong>Best for:</strong> Retirees, dividend investors, rental property owners, anyone living on passive income from the US.</p>
         </div>
       </div>
     </div>
+    <p class="citizenship-note" style="font-size:0.78rem;color:rgba(255,255,255,0.45);margin-top:16px;line-height:1.5">Citizenship timelines are subject to Portuguese law and currently under legislative review. Speak to San Francisco for guidance specific to your situation.</p>
     <div class="visa-cta">
       <p>Not sure which applies to you?</p>
       <a href="https://joseph-app.onrender.com" class="btn-primary">Ask Dora. It's Free →</a>
@@ -393,7 +397,7 @@ footer{background:#07101F;padding:56px 24px 32px}
       <div class="step">
         <div class="step-num">03</div>
         <h3>We guide you all the way</h3>
-        <p>From FBI apostille timing to VFS appointment monitoring to AIMA booking. Dora tracks every deadline and alerts you when action is needed. Francisco (our Portuguese lawyer) reviews before you submit.</p>
+        <p>From FBI apostille timing to VFS appointment monitoring to AIMA booking. Dora tracks every deadline and alerts you when action is needed. Our specialist immigration law team reviews before you submit.</p>
       </div>
     </div>
   </div>
@@ -428,7 +432,7 @@ footer{background:#07101F;padding:56px 24px 32px}
         <div class="price-desc">Professional guidance at every step</div>
         <ul class="price-features">
           <li>Everything in Self-Guided</li>
-          <li>Francisco (lawyer) document review</li>
+          <li>our immigration specialists document review</li>
           <li>Document pack assembly and checks</li>
           <li>Motivation letter drafting</li>
           <li>Priority support</li>
@@ -451,31 +455,6 @@ footer{background:#07101F;padding:56px 24px 32px}
       </div>
     </div>
     <p class="price-note">Prices are per application (primary applicant). Dependent family members from €99 each.</p>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials-section">
-  <div class="testimonials-inner">
-    <h2 class="testimonials-title">What Our Clients Say</h2>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"I spent months trying to figure out whether I qualified for the D8. Dora told me in 15 minutes, gave me a checklist, and flagged that the SF office wants 12 months of income statements. She was right. We got our visas on the first submission."</p>
-        <div class="testimonial-author">Jennifer M., California</div>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"Retired at 62 and always dreamed of Portugal. The D7 process sounded complicated until Francisco reviewed our file. Six months later we're watching the sunset over the Algarve. It still feels unreal."</p>
-        <div class="testimonial-author">David &amp; Sarah T., Texas</div>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars">★★★★★</div>
-        <p class="testimonial-text">"Dora told me to apply through Washington DC rather than California because my temporary address qualified me for the easier office. That single piece of advice was worth the entire fee."</p>
-        <div class="testimonial-author">James H., London</div>
-      </div>
-    </div>
-    <p class="testimonials-note">Results may vary. Individual experiences.</p>
   </div>
 </section>
 
@@ -519,6 +498,31 @@ footer{background:#07101F;padding:56px 24px 32px}
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="testimonials-inner">
+    <h2 class="testimonials-title">What Our Clients Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"I spent months trying to figure out whether I qualified for the D8. Dora told me in 15 minutes, gave me a checklist, and flagged that the SF office wants 12 months of income statements. She was right. We got our visas on the first submission."</p>
+        <div class="testimonial-author">Jennifer M., California</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Retired at 62 and always dreamed of Portugal. The D7 process sounded complicated until our immigration law team reviewed our file. Six months later we're watching the sunset over the Algarve. It still feels unreal."</p>
+        <div class="testimonial-author">David &amp; Sarah T., Texas</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Dora told me to apply through Washington DC rather than California because my temporary address qualified me for the easier office. That single piece of advice was worth the entire fee."</p>
+        <div class="testimonial-author">James H., London</div>
+      </div>
+    </div>
+    <p class="testimonials-note">Results may vary. Individual experiences.</p>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="faq-section">
   <div class="faq-inner">
@@ -551,7 +555,7 @@ footer{background:#07101F;padding:56px 24px 32px}
 
       <details>
         <summary>Can my spouse work in Portugal on our visa?</summary>
-        <p>On a D8, your accompanying spouse may work remotely for non-Portuguese employers. On a D7, taking up active employment in Portugal may require separate authorisation. Remote work for a foreign employer is generally permitted. We review each family situation with Francisco individually.</p>
+        <p>On a D8, your accompanying spouse may work remotely for non-Portuguese employers. On a D7, taking up active employment in Portugal may require separate authorisation. Remote work for a foreign employer is generally permitted. We review each family situation with our immigration specialists individually.</p>
       </details>
 
       <details>
@@ -565,7 +569,7 @@ footer{background:#07101F;padding:56px 24px 32px}
 
       <details>
         <summary>The minimum is €920/month. How much should I actually show?</summary>
-        <p>Show considerably more, especially for San Francisco. The minimum is a floor, not a target. Consular officers want to see financial stability. For D8 at SF, showing €5,000–7,000/month is more comfortable than the €3,480 minimum. For D7, €1,500–2,000/month is stronger than €920. Bank statements should show consistent deposits over time, not a recent lump sum.</p>
+        <p>Show considerably more, especially for San San Francisco. The minimum is a floor, not a target. Consular officers want to see financial stability. For D8 at SF, showing €5,000–7,000/month is more comfortable than the €3,480 minimum. For D7, €1,500–2,000/month is stronger than €920. Bank statements should show consistent deposits over time, not a recent lump sum.</p>
       </details>
 
       <details>
@@ -589,7 +593,7 @@ footer{background:#07101F;padding:56px 24px 32px}
 
       <details>
         <summary>How long does the process take from start to finish?</summary>
-        <p>From starting document preparation to visa in hand: 4–6 months is realistic. This includes 4–8 weeks for the FBI apostille, 4–8 weeks for document preparation and VFS appointment, and 60–90 days for the consulate to process. San Francisco runs at the longer end, sometimes 90+ days. Washington DC is typically faster at 45–60 days.</p>
+        <p>From starting document preparation to visa in hand: 4–6 months is realistic. This includes 4–8 weeks for the FBI apostille, 4–8 weeks for document preparation and VFS appointment, and 60–90 days for the consulate to process. San San Francisco runs at the longer end, sometimes 90+ days. Washington DC is typically faster at 45–60 days.</p>
       </details>
 
       <details>
@@ -609,7 +613,7 @@ footer{background:#07101F;padding:56px 24px 32px}
 
       <details>
         <summary>Which VFS office should I use?</summary>
-        <p>California → San Francisco. New York, New Jersey, Connecticut → New York. DC, Virginia, Maryland, NC, SC, GA, most FL, TX, LA → Washington DC. Miami/Fort Lauderdale → Miami or DC. Texas → Houston or DC. You must use the office covering your state of residence. You cannot choose based on appointment availability.</p>
+        <p>California → San San Francisco. New York, New Jersey, Connecticut → New York. DC, Virginia, Maryland, NC, SC, GA, most FL, TX, LA → Washington DC. Miami/Fort Lauderdale → Miami or DC. Texas → Houston or DC. You must use the office covering your state of residence. You cannot choose based on appointment availability.</p>
       </details>
 
       <details>
@@ -647,7 +651,7 @@ footer{background:#07101F;padding:56px 24px 32px}
 
       <details>
         <summary>Do I need to speak Portuguese?</summary>
-        <p>Not to get started. English is widely spoken in Lisbon, Porto, and the Algarve, especially among younger people and in business. However, government offices often operate in Portuguese, and daily life outside tourist areas runs in Portuguese. For citizenship after 5 years, you need to pass an A2-level Portuguese language test, equivalent to basic conversational ability.</p>
+        <p>Not to get started. English is widely spoken in Lisbon, Porto, and the Algarve, especially among younger people and in business. However, government offices often operate in Portuguese, and daily life outside tourist areas runs in Portuguese. For citizenship after qualifying legal residency, you need to pass an A2-level Portuguese language test, equivalent to basic conversational ability.</p>
       </details>
 
       <details>
@@ -675,9 +679,13 @@ footer{background:#07101F;padding:56px 24px 32px}
 
 <!-- FINAL CTA -->
 <section class="final-cta">
-  <h2>Ready to Start Your Portugal Journey?</h2>
-  <p>Talk to Dora today. She'll tell you exactly what you qualify for.</p>
-  <a href="https://joseph-app.onrender.com" class="btn-primary">Start Free →</a>
+  <div class="final-cta-bg"></div>
+  <div class="final-cta-overlay"></div>
+  <div class="final-cta-inner">
+    <h2>Ready to Start Your Portugal Journey?</h2>
+    <p>Talk to Dora today. She'll tell you exactly what you qualify for.</p>
+    <a href="https://joseph-app.onrender.com" class="btn-primary">Start Free →</a>
+  </div>
 </section>
 
 <!-- FOOTER -->
@@ -692,9 +700,9 @@ footer{background:#07101F;padding:56px 24px 32px}
         <h4>Navigate</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="blog/index.html">Blog</a></li>
           <li><a href="#how-it-works">How It Works</a></li>
           <li><a href="#pricing">Pricing</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
         </ul>
       </div>
       <div class="footer-col">
