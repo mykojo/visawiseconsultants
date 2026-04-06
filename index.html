@@ -32,7 +32,7 @@ img{max-width:100%;height:auto}
 /* NAV */
 .navbar{position:sticky;top:0;z-index:100;background:var(--white);box-shadow:0 1px 12px rgba(0,0,0,0.08)}
 .nav-container{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px}
-.nav-logo img{height:44px;display:block}
+.nav-logo img{height:55px;display:block;width:auto}
 .nav-links{list-style:none;display:flex;align-items:center;gap:32px}
 .nav-links a{font-family:'Outfit',sans-serif;font-weight:500;font-size:0.95rem;color:var(--text);transition:color 0.2s}
 .nav-links a:hover{color:var(--gold-dark)}
@@ -43,7 +43,8 @@ img{max-width:100%;height:auto}
 
 /* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;
-  background: radial-gradient(ellipse at 80% 90%, rgba(245,159,11,0.15) 0%, rgba(26,59,107,0.4) 40%, #0A1628 70%)}
+  background: radial-gradient(ellipse at 80% 90%, rgba(245,159,11,0.18) 0%, rgba(26,59,107,0.55) 40%, rgba(10,22,40,0.88) 70%),
+  url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80') center/cover no-repeat}
 .hero-inner{max-width:720px}
 .hero-label{display:inline-block;font-size:0.8rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);background:rgba(245,159,11,0.12);border:1px solid rgba(245,159,11,0.3);padding:6px 16px;border-radius:20px;margin-bottom:24px}
 .hero h1{font-size:clamp(2.4rem,5vw,3.8rem);color:var(--white);line-height:1.15;margin-bottom:20px}
@@ -69,9 +70,11 @@ img{max-width:100%;height:auto}
 
 /* WHY PORTUGAL */
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.why-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:28px;transition:box-shadow 0.2s}
-.why-card:hover{box-shadow:0 4px 24px rgba(0,0,0,0.08)}
-.why-icon{font-size:2rem;margin-bottom:14px}
+.why-card{background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:box-shadow 0.2s}
+.why-card:hover{box-shadow:0 6px 28px rgba(0,0,0,0.1);transform:translateY(-2px)}
+.why-card-img{height:180px;background-size:cover;background-position:center}
+.why-card-body{padding:24px 28px 28px}
+.why-icon{font-size:1.8rem;margin-bottom:12px}
 .why-card h3{font-size:1.05rem;margin-bottom:10px;color:var(--navy)}
 .why-card p{font-size:0.9rem;color:var(--muted);line-height:1.65}
 
@@ -119,7 +122,7 @@ img{max-width:100%;height:auto}
 .price-note{font-size:0.8rem;color:var(--muted);margin-top:28px;text-align:center}
 
 /* TESTIMONIALS */
-.testimonials-section{background:var(--navy);padding:80px 24px}
+.testimonials-section{background:linear-gradient(rgba(10,22,40,0.88),rgba(10,22,40,0.88)),url('https://images.unsplash.com/photo-1548013146-72479768bada?w=1920&q=80') center/cover no-repeat;padding:80px 24px}
 .testimonials-inner{max-width:1100px;margin:0 auto}
 .testimonials-title{font-size:clamp(1.8rem,3.5vw,2.4rem);color:var(--white);text-align:center;margin-bottom:48px}
 .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -157,7 +160,7 @@ details p,details div{padding:0 22px 18px;font-size:0.9rem;color:var(--muted);li
 details p strong{color:var(--text)}
 
 /* FINAL CTA */
-.final-cta{background:var(--navy);padding:100px 24px;text-align:center}
+.final-cta{background:linear-gradient(rgba(10,22,40,0.82),rgba(10,22,40,0.82)),url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80') center/cover no-repeat;padding:100px 24px;text-align:center}
 .final-cta h2{font-size:clamp(2rem,4vw,3rem);color:var(--white);margin-bottom:16px}
 .final-cta p{font-size:1.05rem;color:rgba(255,255,255,0.7);margin-bottom:36px}
 
@@ -205,7 +208,7 @@ footer{background:#07101F;padding:56px 24px 32px}
 <nav class="navbar">
   <div class="nav-container">
     <a href="index.html" class="nav-logo">
-      <img src="images/logo.png" height="44" alt="VisaWise">
+      <img src="images/logo.png" height="55" alt="VisaWise">
     </a>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -266,34 +269,52 @@ footer{background:#07101F;padding:56px 24px 32px}
     <h2 class="section-title">Why Thousands of Americans Are Making the Move</h2>
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-icon">🏥</div>
-        <h3>Healthcare without the bills</h3>
-        <p>Portugal's public healthcare is free for residents. Private insurance costs €400–1,200/year — not $40,000.</p>
+        <div class="why-card-img" style="background-image:url('https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=800&q=80')"></div>
+        <div class="why-card-body">
+          <div class="why-icon">🏥</div>
+          <h3>Healthcare without the bills</h3>
+          <p>Portugal's public healthcare is free for residents. Private insurance costs €400–1,200/year — not $40,000.</p>
+        </div>
       </div>
       <div class="why-card">
-        <div class="why-icon">🛡️</div>
-        <h3>Safety you can actually feel</h3>
-        <p>Ranked 7th safest country globally by the 2024 Peace Index. A fundamentally different daily experience.</p>
+        <div class="why-card-img" style="background-image:url('https://images.unsplash.com/photo-1548707309-dcebeab9ea9b?w=800&q=80')"></div>
+        <div class="why-card-body">
+          <div class="why-icon">🛡️</div>
+          <h3>Safety you can actually feel</h3>
+          <p>Ranked 7th safest country globally by the 2024 Peace Index. A fundamentally different daily experience.</p>
+        </div>
       </div>
       <div class="why-card">
-        <div class="why-icon">🌍</div>
-        <h3>Path to EU citizenship</h3>
-        <p>Five years of legal residency opens the door to a Portuguese passport — live and work anywhere in the EU.</p>
+        <div class="why-card-img" style="background-image:url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80')"></div>
+        <div class="why-card-body">
+          <div class="why-icon">🌍</div>
+          <h3>Path to EU citizenship</h3>
+          <p>Five years of legal residency opens the door to a Portuguese passport — live and work anywhere in the EU.</p>
+        </div>
       </div>
       <div class="why-card">
-        <div class="why-icon">💶</div>
-        <h3>A life that costs less</h3>
-        <p>A comfortable life in Porto or the Algarve for €1,500–2,000/month. Your money goes further in ways that change how you live.</p>
+        <div class="why-card-img" style="background-image:url('https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800&q=80')"></div>
+        <div class="why-card-body">
+          <div class="why-icon">💶</div>
+          <h3>A life that costs less</h3>
+          <p>A comfortable life in Porto or the Algarve for €1,500–2,000/month. Your money goes further in ways that change how you live.</p>
+        </div>
       </div>
       <div class="why-card">
-        <div class="why-icon">☀️</div>
-        <h3>300 days of sunshine</h3>
-        <p>The Algarve averages 3,000 hours of sun per year. Cold, grey winters become a distant memory.</p>
+        <div class="why-card-img" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80')"></div>
+        <div class="why-card-body">
+          <div class="why-icon">☀️</div>
+          <h3>300 days of sunshine</h3>
+          <p>The Algarve averages 3,000 hours of sun per year. Cold, grey winters become a distant memory.</p>
+        </div>
       </div>
       <div class="why-card">
-        <div class="why-icon">✈️</div>
-        <h3>Gateway to Schengen Europe</h3>
-        <p>Live in Portugal, explore 26 countries visa-free. Weekend in Paris, month in Barcelona, summer in the Azores.</p>
+        <div class="why-card-img" style="background-image:url('https://images.unsplash.com/photo-1488085061387-422e29b40080?w=800&q=80')"></div>
+        <div class="why-card-body">
+          <div class="why-icon">✈️</div>
+          <h3>Gateway to Schengen Europe</h3>
+          <p>Live in Portugal, explore 26 countries visa-free. Weekend in Paris, month in Barcelona, summer in the Azores.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -345,7 +366,7 @@ footer{background:#07101F;padding:56px 24px 32px}
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="section" id="how-it-works" style="background:var(--cream)">
+<section class="section" id="how-it-works" style="background:linear-gradient(rgba(250,247,242,0.94),rgba(250,247,242,0.94)),url('https://images.unsplash.com/photo-1513735492246-483525079686?w=1920&q=80') center/cover no-repeat">
   <div class="section-inner">
     <div class="section-label">The Process</div>
     <h2 class="section-title">From First Question to Residence Permit</h2>
