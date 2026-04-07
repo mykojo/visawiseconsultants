@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+package.json
+*.png
+vwc-live-check.js
+_fix_sf*.py
+_patch*.py
